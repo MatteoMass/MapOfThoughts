@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Map Of Thoughts</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Funzione per calcolare le coordinate in percentuale
+            function calcolaCoordinatePercentuali() {
+                var immagine = document.getElementById('mappa-immagine');
+                var larghezzaImmagine = immagine.clientWidth;
+                var altezzaImmagine = immagine.clientHeight;
+
+                // Calcolare le coordinate in percentuale per ogni area
+                var isola1 = document.getElementById('isola1');
+                var isola2 = document.getElementById('isola2');
+                var isola3 = document.getElementById('isola3');
+                var isola4 = document.getElementById('isola4');
+                var isola5 = document.getElementById('isola5');
+
+                isola1.coords = larghezzaImmagine * 20 / 100 + "," + altezzaImmagine * 8 / 100 + "," + larghezzaImmagine * 30 / 100 + "," + altezzaImmagine * 18 / 100;
+                isola2.coords = larghezzaImmagine * 53 / 100 + "," + altezzaImmagine * 6 / 100 + "," + larghezzaImmagine * 63 / 100 + "," + altezzaImmagine * 18 / 100;
+                isola3.coords = larghezzaImmagine * 2 / 100 + "," + altezzaImmagine * 83 / 100 + "," + larghezzaImmagine * 20 / 100 + "," + altezzaImmagine * 93 / 100;
+                isola4.coords = larghezzaImmagine * 80 / 100 + "," + altezzaImmagine * 85 / 100 + "," + larghezzaImmagine * 93 / 100 + "," + altezzaImmagine * 95 / 100;
+                isola5.coords = larghezzaImmagine * 38 / 100 + "," + altezzaImmagine * 95 / 100 + "," + larghezzaImmagine * 65 / 100 + "," + altezzaImmagine * 100 / 100;
+
+            }
+
+            // Eseguire la funzione al caricamento della pagina e al ridimensionamento della finestra
+            calcolaCoordinatePercentuali();
+            window.addEventListener('resize', calcolaCoordinatePercentuali);
+        });
+
+    </script>
+
+</head>
+
+
+<body style="background-color: #FFFAF0;">
+
+    <h1 style="font-size: 3vw; text-align:center; padding-top:1%">Map Of Thoughts</h1>
+
+    <h4 style="font-size: 1vw;     text-align: justify;
+    text-align-last: center; padding-top:1%; padding-left: 4%; padding-right: 4%;">
+        Benvenuto in Map of Thoughts, il blog che ovvero la mappa dei miei Pensieri!<br /><br />
+        Ho deciso di modellare i miei pensieri come un arcipelago, in quanto credo che sia la struttura migliore per riflettere la complessità della mente umana.
+        L'arcipelago mi permette di creare una moltitudine di isole che sono tra loro più o meno vicine, ma tutte immerse nello stesso mare.<br /><br />
+        La Mappa qui sotto ti permetterà di districarti tra le isole del mio Arcipelago, come vedi ci sono quattro isole
+        principali: l'<b>isola degli Uomini</b>, l'<b>isola dei Promontori Gemelli</b>, l'<b>isola della Foresta
+            Mistica</b> e l'<b>isola dei Grandi Laghi</b>.<br /><br />
+        Ognuna di queste è caratterizzata da uno o più argomenti, puoi iniziare ad esplorare questo mondo cliccando sui
+        titoli di ciascuna isola.</h4><br />
+
+    <map name="isole-map">
+        <area shape="rect" id="isola1" coords="0,0,500,500" href="isole/isola-degli-uomini.html">
+        <area shape="rect" id="isola2" coords="0,0,500,500" href="isole/isola-dei-grandi-laghi.html">
+        <area shape="rect" id="isola3" coords="0,0,500,500" href="isole/isola-dei-promontori-gemelli.html">
+        <area shape="rect" id="isola4" coords="0,0,500,500" href="isole/isola-della-foresta-mistica.html">
+        <area shape="rect" id="isola5" coords="0,0,500,500" href="isole/arcipelago.html">
+    </map>
+
+    <img id="mappa-immagine"
+        style="width: 70vw; margin-left:auto; margin-right:auto; margin-bottom:1vw; display: block; border: 5px solid #555;"
+        src="assets/img/map_name.jpg" usemap="#isole-map" />
+
+</body>
+
+
+
+<footer>
+    <p style="font-size: 1vw;     text-align: justify;
+    text-align-last: center; padding-top:1%; padding-left: 4%; padding-right: 4%;">
+    <a href="https://matteomass.github.io/" target="_blank">Matteo Massetti</a>
+    </p>
+  </footer>
+
+</html>
