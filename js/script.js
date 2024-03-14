@@ -26,12 +26,20 @@ function mostraPostsPerCategoria(categoriaSelezionata) {
         const postElement = document.createElement('div');
         postElement.classList.add('post');
         postElement.innerHTML = `
-          <h2>${post.titolo}</h2>
-          <p>${post.testo}</p>
-          <p>Data: ${post.data}</p>
-          <p>Categoria: ${post.isola}</p>
+        <div class="card bg-light mb-3" style="max-width: 20rem;">
+          <div class="card-body">
+            <h4 class="card-title">${post.titolo}</h4>
+            <p class="card-text">${post.testo}</p>
+          </div>
+          <div class="card-footer">${post.data}</div>
+        </div>
+
         `;
+          
         postsContainer.appendChild(postElement);
       }
     });
   }
+
+
+
