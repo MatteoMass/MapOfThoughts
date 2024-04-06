@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Map Of Thoughts</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <script src="../js/script.js"></script>
+
+
+
+</head>
+
+
+<body style="background-color: #FFFAF0;" onload="mostraPostsPerCategoria('all');">
+
+
+
+    <script>
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const post_id = urlParams.get('post');
+        posts.forEach(post => {
+            if (post.id === post_id) {
+                const postElement = document.getElementById('postContainer');
+                postElement.style.marginRight = '1rem';
+
+                postElement.innerHTML = `
+                    
+            <div style= "text-align:center; padding: 3%">
+                        <h1>${post.titolo}</h4>
+
+                        <div style="display: flex; align-items: center; margin-top:3%">
+                            <div style="flex: 0 0 25%;"></div>
+                            <img style=" flex: 0 0 30%; max-width: 20%; height: auto;" src="${post.immagine}">
+                            <div style="flex: 0 0 2%;"></div>
+                            <div style="flex: 0 0 30%; font-size:1em">
+                                <p align="justify">${post.testo}</p>
+                                <p align="left">  ${post.data} </p>
+                            </div>
+                        </div>
+
+                   
+                </div>      
+                    `;
+
+
+
+            }
+        });
+
+    </script>
+
+
+</body>
+
+
+
+
+
+</html>
