@@ -2,7 +2,6 @@
 
 let posts = [
   {
-    "isola": "uomini",
     "titolo": "La Fattoria degli Animali",
     "id": "fattoria_animali",
     "testo": `
@@ -22,7 +21,7 @@ let posts = [
 
 
 
-function mostraPostsPerCategoria(categoriaSelezionata) {
+function mostraPosts(filter) {
   const postsContainer = document.getElementById('postsContainer');
   postsContainer.innerHTML = '';
   postsContainer.style.display = 'flex';
@@ -30,7 +29,7 @@ function mostraPostsPerCategoria(categoriaSelezionata) {
 
   var lista = posts;
   lista.forEach(post => {
-    if (categoriaSelezionata === 'all' || post.isola === categoriaSelezionata) {
+    if (post.titolo.includes(filter) || filter  === '') {
       const postElement = document.createElement('div');
       postElement.classList.add('post');
       postElement.style.marginRight = '1rem';
@@ -43,7 +42,7 @@ function mostraPostsPerCategoria(categoriaSelezionata) {
 
 
       postElement.innerHTML = `
-        <div class="card bg-light mb-3" style="width: 20rem; height: 18em;">
+        <div class="card bg-light mb-3" style="width: 20rem; ">
         
           <div class="card-body">
             <h4 class="card-title">${post.titolo}</h4>
@@ -58,5 +57,9 @@ function mostraPostsPerCategoria(categoriaSelezionata) {
     }
   });
 }
+
+
+
+
 
 
