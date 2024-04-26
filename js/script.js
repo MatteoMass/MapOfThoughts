@@ -44,7 +44,7 @@ function mostraPosts(filter) {
 
   var lista = posts;
   lista.forEach(post => {
-    if (post.titolo.includes(filter) || filter  === '') {
+    if (post.titolo.toLowerCase().includes(filter.toLowerCase()) || filter  === '') {
       const postElement = document.createElement('div');
       postElement.classList.add('post');
       postElement.style.marginRight = '1rem';
