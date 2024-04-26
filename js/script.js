@@ -2,6 +2,21 @@
 
 let posts = [
   {
+    "titolo": "Il sussurro dei teschi",
+    "id": "sussurro_teschi",
+    "testo": `
+    Lo scorso anno ho visitato la mostra sul <b>Futurismo</b> a Padova. Tra tutti i quadri e le opere esposte quella che mi ha colpito di più é stata 'Autoritratto con Teschi' di Luigi Russolo.
+    <br/>
+    Leggendo le diverse descrizioni di questo quadro, quello che l'autore voleva trasmettere era l'ineluttabilità della morte. Ma non è quello che mi ha colpito, infatti appena ho posto lo sguardo sul quadro, mi è subito sorta una domanda, ovvero 'Che cosa gli stanno dicendo quei teschi?'.
+    <br/>
+    Quello che ci ho visto io era un uomo sorpreso, sconvolto da quello che gli sta venendo detto da quei tetri teschi disposti intorno a lui. Di cosa stanno parlano, quale nascosta verità gli stanno sussurrando?
+    <br/>
+    `,
+    "snippet": "Lo scorso anno ho visitato la mostra sul <b>Futurismo</b> a Padova. Tra tutti i quadri e le opere esposte quella che mi ha colpito di più é stata 'Autoritratto con Teschi' di Luigi Russolo.",
+    "immagine": "assets/img/posts/russolo.jpg",
+    "data": "27/04/2024"
+  },
+  {
     "titolo": "La Fattoria degli Animali",
     "id": "fattoria_animali",
     "testo": `
