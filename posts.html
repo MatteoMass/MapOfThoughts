@@ -37,15 +37,19 @@
                 postElement.innerHTML = `
                     
             <div style= "text-align:center; padding: 3%">
-                        <h1>${post.titolo}</h4>
+                        <h1>${post.titolo}</h1>
 
                         <div style="display: flex; align-items: center; margin-top:3%">
-                            <div style="flex: 0 0 25%;"></div>
-                            <img style=" flex: 0 0 30%; max-width: 20%; height: auto;" src="${post.immagine}">
+                            <div style=""></div>
+                            <img style=" max-width: 20%; height: auto;" src="${post.immagine}">
                             <div style="flex: 0 0 2%;"></div>
-                            <div style="flex: 0 0 30%; font-size:1em">
-                                <p align="justify">${post.testo}</p>
-                                <p align="left">  ${post.data} </p>
+                            <div>
+                                <div style=" font-size:1.25em">
+                                    <p align="justify">${post.testo}</p>
+                                </div>
+                                <div style=" font-size:1em">
+                                    <p align="left">  ${post.data} </p>
+                                </div>
                             </div>
                         </div>
 
