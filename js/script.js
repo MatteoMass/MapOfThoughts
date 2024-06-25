@@ -43,7 +43,7 @@ let posts = [
     "titolo": "Intelligenza Artificiale e Umana",
     "id": "intelligenza_artificiale_umana",
     "testo": `
-    In questi ultimi giorni ho notato una divertente analogia tra il progresso repentino dell'IA avvenuto negli ultimi anni e la regressione/semplificazione del dibattito in certi in alcuni temi, principalmente in america e legati al concetto di <b>'cancel culture'</b>.
+    In questi ultimi giorni ho notato una divertente analogia tra il progresso repentino dell'IA avvenuto negli ultimi anni e la regressione/semplificazione del dibattito in alcuni temi, principalmente in america e legati al concetto di <b>'cancel culture'</b>.
     <br/> 
     Il punto di svolta nei modelli di AI, riguarda la pubblicazione di un paper chiamato <b>'Attention is all you need'</b>, che detto in maniera semplice introduce un algoritmo per far comprendere al modello in maniera approfondita il contesto della frase in cui una parola è calata. Prima di questo paper, i modelli faticavano a comprendere il contesto di una parola o una frase, e di conseguenza non ne capivano il significato.
     <br/> 
@@ -51,7 +51,7 @@ let posts = [
     <br/>
     La parola magica in entrambi i mondi è il <b>contesto</b>, nel primo ci si è sbattuti per far in modo che le macchine possano comprenderlo a fondo, nel secondo sembra che venga completamente rimosso da ogni dibattito, appiattendo ogni cosa a 'giusto' o 'sbagliato'.
     `,
-    "snippet": "Durante la serata del Chroma Festival con ospite il rapper Massimo Pericolo, mi ha colpito molto una sua frase detta sul palco.",
+    "snippet": "In questi ultimi giorni ho notato una divertente analogia tra il progresso repentino dell'IA avvenuto negli ultimi anni e la regressione/semplificazione del dibattito in alcuni temi...",
     "immagine": "assets/img/posts/cancel_culture_ai.jpg",
     "data": "25/06/2024"
   },
