@@ -43,9 +43,9 @@ let posts = [
     "titolo": "Intelligenza Artificiale e Umana",
     "id": "intelligenza_artificiale_umana",
     "testo": `
-    In questi ultimi giorni ho notato una divertente analogia tra il progresso repentino dell'IA avvenuto negli ultimi anni e la regressione/semplificazione del dibattito in alcuni temi, principalmente in america e legati al concetto di <b>'cancel culture'</b>.
+    In questi ultimi giorni ho notato una divertente analogia tra il progresso repentino dell' <b>Intelligenza Artificiale</b> avvenuto negli ultimi anni e la regressione/semplificazione del dibattito in alcuni temi, principalmente in america e legati al concetto di <b> Cancel Culture</b>.
     <br/> 
-    Il punto di svolta nei modelli di AI, riguarda la pubblicazione di un paper chiamato <b>'Attention is all you need'</b>, che detto in maniera semplice introduce un algoritmo per far comprendere al modello in maniera approfondita il contesto della frase in cui una parola è calata. Prima di questo paper, i modelli faticavano a comprendere il contesto di una parola o una frase, e di conseguenza non ne capivano il significato.
+    Il punto di svolta nei modelli di AI, riguarda la pubblicazione di un paper chiamato <b>'Attention is all you need'</b>, che detto in parole povere introduce un algoritmo per far comprendere al modello in maniera approfondita il contesto della frase in cui una parola è calata. Prima di questo paper, i modelli faticavano a comprendere il contesto di una parola o una frase, e di conseguenza non ne capivano il significato.
     <br/> 
     Esattamente lo stesso fenomeno, ma con segno negativo, è accadato in certi movimenti culturali, come la sopracitata <b>Cancel Culture</b>. Come suggerisce il nome, queste correnti si fanno promotori della cancellazioni di persone, parole, testi e via dicendo, che per un motivo o per un altro non rispecchiano i valori odierni, eliminandoli da qualisiasi contesto, sia quello colloquale, accademico o lavorativo. 
     <br/>
